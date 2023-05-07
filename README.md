@@ -1,5 +1,5 @@
 
-![Logo](https://i.ibb.co/nCcZC4J/icon2.png)
+![Logo](https://i.ibb.co/bJ8gj9N/icon3.png)
 
 # EDITOR IMAGENES
 
