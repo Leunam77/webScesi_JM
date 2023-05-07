@@ -1,8 +1,7 @@
 
 ![Logo](https://i.ibb.co/nCcZC4J/icon2.png)
 
-
-#EDITOR IMAGENES
+# EDITOR IMAGENES
 
 Es un editor de imagenes simple con funciones básicas : )
 

@@ -224,7 +224,6 @@ footer {
     body footer{
         display: flex;
         flex-direction: column;
-        height: 20vh;
     }
 }
 @media screen and (max-width: 500px){

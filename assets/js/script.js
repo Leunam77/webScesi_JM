@@ -5,7 +5,6 @@ resetearFiltro = document.querySelector(".resetear"),
 insertarImg = document.querySelector(".insertar"),
 guardarImg = document.querySelector(".guardarImg"),
 borrarSesion = document.querySelector(".borrarSesion");
-
 let rotaciones=0, horizontal=1, vertical=1;
 let iniX, iniY;
 
