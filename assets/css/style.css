@@ -1,0 +1,300 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ffffff;
+}
+body{
+    display: flex;
+    flex-direction: column;
+}
+.contenedor{
+    padding: 10px;
+    width: 100%;
+    height: 100vh;
+    background: #040926;
+}
+#navbar .titulito {
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    justify-items: center;
+    align-items: center;
+}
+.contenedor .controles .iconito{
+    display: none;
+}
+.contenedor h2{
+    justify-content: center;
+    font-size: 27px;
+    font-weight: 900;
+}
+.contenedor .contenedorEdicion{
+    display: flex;
+    margin: 20px 0;
+}
+.contenedorEdicion .panelEditor{
+    padding: 10px;
+    width: 300px;
+    border: 3px solid #746f6f;
+    border-radius: 10px;
+}
+.panelEditor .titulo{
+    display: block;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 14px;
+}
+.panelEditor button{
+    height: 40px;
+    font-size: 15px;
+    border-radius: 5px;
+    margin-bottom: 9px;
+    border: 1px solid #ffffff;
+    cursor: pointer;
+    width: calc(100% / 2 - 4px);
+}
+.panelEditor button:hover{
+    background: #b4b3e8;
+    color: #000;
+}
+
+.filtros button.activo{
+    border-color: #6338ff;
+    color: #fff;
+    background: #6338ff;
+}
+.filtros .deslizante .filtroInformacion{
+    display: flex;
+    color: #464646;
+    font-size: 18px;
+    justify-content: space-between;
+}
+.filtros .deslizante input{
+    margin-bottom: 18px;
+    width: 100%;
+    height: 9px;
+    accent-color: #6338ff;
+}
+.panelEditor .rotaciones .opciones{
+    margin-bottom:15px ;
+}   
+.panelEditor .rotaciones button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #020412;
+}
+.panelEditor .rotaciones button:hover {
+    background-color: #23263f;
+}
+.rotaciones .opciones button:active{
+    color: #d41515;
+    background: #6338ff;
+    border-color: #6338ff;
+}
+.contenedorEdicion .vistaImg{
+    background-color: #1b2044;
+    flex-grow: 1;
+    display: flex;
+    overflow: hidden;
+    margin-left: 10px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+}
+.vistaImg img{
+    max-width: 600px;
+    max-height: 600px;
+    width: 100%;
+    height: 100%;
+    object-fit: contain; 
+}
+.contenedor .controles button{
+    padding: 5px 10px;
+    font-size: 15px;
+    font-weight: 550;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    border-color: #fff;
+    border: solid 1px;
+}
+#navbar{
+    display: flex;
+    justify-content: space-between;
+}
+footer {
+    display: flex;
+    background-color: #060D37;
+}
+.contenidoFooter {
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+}
+.socialFooter ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.socialFooter ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+.derechosReservados {
+    background-color: #020412;
+    padding: 10px 0;
+    text-align: center;
+}
+.derechosReservados p {
+    margin: 0;
+    font-size: 15px;
+    color: #ffffff;
+}
+@media screen and (max-width: 900px){
+    html {
+        scroll-behavior: smooth;
+    }
+    .contenedor{
+        padding: 20px;
+        padding-top: 0;
+        border-radius: 0;
+    }
+    .contenedor .contenedorEdicion{
+        flex-wrap: wrap-reverse;
+    }
+    .contenedorEdicion .panelEditor{
+        width: 100%;
+    }
+    .contenedor .contenedorEdicion .vistaImg{
+        height: 50vh;
+        width: 60vw;
+        margin: 0 0 15px;
+    }
+    .contenedor .controles .iconito{
+        display: block;
+        text-align: left;
+        font-size: 30px;
+    }
+    .contenedor .controles .iconito i{
+        background-color: #ffffff00;
+        color: #ffffff;
+    }
+    .contenedor .controles .iconito i:hover{
+        background-color: #7f7c8800;
+        color: #c5b8b8;
+
+    }
+    .contenedor .controles.responsive button {
+        display: block;
+        text-align: left;
+    }
+    .contenedor .controles button{
+        display: none;
+    }
+    .contenedor .contenedorEdicion .panelEditor{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contenedor .contenedorEdicion .panelEditor .rotaciones .rotacionesContenedor{
+        display: flex;
+        flex-direction: row;  
+    }
+    .contenedor .contenedorEdicion .panelEditor .rotaciones .rotacionesContenedor .opciones{
+        display: flex;
+        margin-right: 20px;
+    }
+    .contenedor .contenedorEdicion .panelEditor .rotaciones .rotacionesContenedor .opciones button{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    #navbar{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-between;
+    }
+    #navbar .titulito{
+        width: 100%;
+        text-align: center;
+    }
+    body footer{
+        display: flex;
+        flex-direction: column;
+        height: 20vh;
+    }
+}
+@media screen and (max-width: 500px){
+    html{
+        scroll-behavior: smooth;
+        width: 100%;
+    }
+    .contenedor{
+        padding: 20px;
+        padding-top: 0;
+        border-radius: 0;
+    }
+    .contenedor button{
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    #navbar .titulito{
+        width: 100%;
+        text-align: center;
+    }
+    .controles .resetear{
+        margin-left: 0;
+        width:100%;
+    }
+    .contenedor .contenedorEdicion .vistaImg{
+        height: 45vh;
+        width: 60vw;
+    }
+    .controles .imgOpciones{
+        width: 100%;
+    }
+    .contenedor .controles .navbar .iconito{
+        text-align: right;
+        font-size: 30px;
+    }
+    .contenedor .controles .iconito i{
+        color: #ffffff;
+    }
+    .contenedor .controles .iconito i:hover{
+        color: #c5b8b8;    
+    }
+    .contenedor .controles.responsive button {
+        display: block;
+        text-align: center;
+    }
+    .contenedor .controles button{
+        display: none;
+    }
+    .contenedor .contenedorEdicion .panelEditor .rotaciones .rotacionesContenedor{
+        display: flex;
+        flex-direction: row;  
+    }
+    .contenedor .contenedorEdicion .panelEditor .rotaciones .rotacionesContenedor .opciones{
+        display: flex;
+        margin-right: 20px;
+    }
+    .contenedor .contenedorEdicion .panelEditor .rotaciones .rotacionesContenedor .opciones button{
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+    #navbar{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    body footer{
+        padding-top: 20px;
+        display: flex;
+        flex-direction: column;
+        height: 20vh;
+    }
+}
